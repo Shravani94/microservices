@@ -1,0 +1,4 @@
+The composite design pattern is used when we have to build a tree -like structure
+Where individual objects and group of objects should be treated the same way
+composite design pattern says treat both single item and combo item the same way
+
