@@ -1,0 +1,41 @@
+/*
+    Builder Design pattern is a creational design pattern
+    it is used to create complex objects step by step without directly using the constructors.
+    definition : it is used in when an object contains many optional fields and multiple combinations of constructors.
+    why Builder Design pattern ?
+    1.> Solves TeleScoping constructor problem
+    2.> Improves readability of code
+    3.> provide step by step Construction
+    4.> Immutable Objects
+    5.> Easy to maintain
+
+    Real time use cases
+
+    Use case                              where used
+    1.> StringBuilder class               java APi
+    2.> Spring Boot Builder               RestTemplate
+    3.> Hibernate Criteria API            Complex Queries
+    4.> Lombok @Builder                   Entity Classes
+
+
+    Difference between Factory and Builder
+
+    Factory                               Builder
+    1.> create object in one step        1.> Step-by-step construction
+    2.> Used When object is simple       2.> Used when object is complex
+    3.> Tight coupling                   3.> loose coupling
+    4.> no optional fields               4.> Handles Optional Fields
+
+    How to make Builder Singleton ?
+    just use Enum with Builder
+
+    EX: Public enum PhoneBuilder{
+    INSTANCE;
+    public Phone getPhone(){
+    return new Phone("8gb","128GB","64MP");
+    }
+    }
+
+    can we break builder singleton with Cloning?
+    no because Enum singleton is is 100% cloning proof+ reflection proof + serialization proof
+     */

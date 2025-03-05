@@ -1,0 +1,27 @@
+/*Singleton Design Pattern ensures only one instance of a class is created and provides a global access point to that instance.
+        The best way to implement Singleton is using Double Locking Mechanism or Enum Singleton.
+
+        Singleton is primarily a Creational Design Pattern, but in rare cases like Logging Service or Caching, it can also
+        act as a Behavioral Design Pattern because it manages global communication between objects.
+
+        how to create Singleton class in java
+        1.> private constructor
+        2.> static variable
+        3.> static method
+
+        we can create three ways singleton  object
+        1.> EagerInitialization(Thread-safe+simple)
+        2.> lazyInitialization: Object created when it required (not thread safe+slow)
+        3.> Double locking (thread safe + performance)
+
+        why we use Singleton design pattern
+           when you want to restrict the object creation to only one instance for:
+           1.>Database connection Pools
+           2.>Logging
+           3.>Cache memory
+           4.>Configuration files
+
+           reflection,Cloning will break singleton because it will create duplicate objects so to avoid that we need to use
+           Enum Singleton
+
+         */

@@ -1,0 +1,50 @@
+/*
+    Adapter design pattern is one of the structural design pattern
+    It act as a bridge between two incompatible interfaces to make them work together without
+    changing their source code.
+
+    Adapter Design Pattern is used to convert incompatible interfaces into a compatible one without changing their source code.
+    It is one of the most commonly used Structural Design Patterns in Spring Framework and Microservices Architecture.
+
+
+
+    Definition : Adapter design pattern allows two different classes with incompatible interfaces to
+    communicate with each other without modifying their code.
+
+    when to use Adapter design pattern ?
+    1.> when you want to integrate old code with new code
+    2.> when two classes have incompatible interfaces
+    3.> when you want reuse existing code
+
+    Advantages ?
+    1.> Loose coupling
+    2.> code reusability
+    3.> improve flexibility
+    4.> Easy integration of legacy code
+
+    In spring boot Adapter design patterns used :
+    1.> Handler Adapter
+    2.> View Resolver Adapter
+    3.> wenMVCConfigureAdapter
+
+    What is HandlerAdapter?
+👉 HandlerAdapter acts as a bridge between DispatcherServlet and Controller Methods
+It converts HTTP Requests into Controller Method Calls automatically.
+
+How it Works Internally?
+Step-by-Step Flow:
+
+DispatcherServlet receives HTTP Request
+It identifies the correct Controller
+But Controller methods are not directly callable because they are just normal Java methods
+So, HandlerAdapter converts HTTP request into a format that Controller understands
+Then it calls the respective Controller method
+
+What is ViewResolverAdapter?
+👉 It converts the View Name returned from the Controller into an actual View Object.
+How Adapter Works Here?
+Controller returns "home" as String
+DispatcherServlet doesn't know what "home" means
+ViewResolverAdapter converts "home" into home.jsp or home.html automatically
+
+     */

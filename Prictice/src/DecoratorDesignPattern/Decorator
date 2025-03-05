@@ -1,0 +1,24 @@
+Decorator design pattern is one of the structural design patter user to add
+new features/Functionality to an existing object without changing its Structure or source code.
+
+Why Do we need Decorator Design pattern?
+1.>If we use inheritance to add features we need to create new classes.
+2.> instead of creating separate subclasses Decorator allows us to add features dynamically.
+
+When to Use Decorator Design Pattern?
+Use Case	                                      Solution
+Adding Features Dynamically                    	  ✅ Decorator Design Pattern
+Avoiding Class Explosion	                      ✅ Decorator Design Pattern
+Open/Closed Principle	                          ✅ Decorator Design Pattern
+
+
+✅ Key Differences between Inheritance vs Decorator Design Pattern
+Feature	Inheritance                                                               	Decorator Design Pattern
+1.>Purpose	Compile-Time Extension	                                                   1.> Runtime Extension (Dynamic)
+2.>Flexibility	Fixed Behavior (Can't remove parent features)	                       2.> Dynamic (Can add or remove features at runtime)
+3.>Class Explosion	Increases Subclasses	                                           3.> No need to create multiple classes
+4.>Modifying Existing Code	Need to Modify Base Class	                               4.> No Need to Touch Base Class
+5.>Multiple Combinations	❌ Not Possible                                            5.> ✅ Possible
+6.>Object Creation	Class-Based                                                        6.> Object-Based
+7.>Open/Closed Principle❌ Violates (Because you have to modify existing class)	       7.> ✅Follows (No need to modify existing class)
+8.>Example	ArrayList → CustomArrayList	                                               8.> Spring HandlerInterceptor, BeanPostProcessor

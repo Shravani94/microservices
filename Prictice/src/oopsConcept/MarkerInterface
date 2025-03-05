@@ -1,0 +1,41 @@
+/*1...> Marker interface in an interface which doesn't have any methods and fields
+    and it act like signe to JVM or compiler to provide the specific behaviour to the objects at rin time
+    ex: 1.> Serializable
+    2.> Cloneable
+    3.> RandomAccess
+    4.> Remote
+    5.>ThreadSafe
+
+    How JVM identify MarkerInterface
+    1.> JVM checks if the object implements the Marker Interface
+    2.> If yes, provide the special behaviour
+    3.> else throw exception
+
+    When to use Marker Interface
+    1.> when u to want provide special behavior without adding any method
+
+    difference between Abstract class and marker interface
+
+    Abstract class                                   marker interface
+    1.> it can have methods                        1.> no methods
+    2.> used for abstraction                       2.> used for tagging
+    3.> zero overhead                              3.> Slight overhead due to method implementation
+
+    2....> what is the difference between final, finally and finalized ?
+
+   i.> final is a key used create constant variables and prevent methodOverriding for methods and
+   inheritance for classes
+   ex : 1.> variable :final int a =10;
+   2.> method : final void say(){
+   System.out.println("say helo");
+   }
+   3.> class : final public class Example{
+   }
+   ii.> finally is a block is always executed when the exception handle or not.
+   to close resources like File and Db connection ect and cleanUp code.
+
+   iii.> finalized is a method is called by the garbage collector before destroying an object to perform cleanup activities
+
+
+
+     */

@@ -1,0 +1,38 @@
+proxy design pattern is one of the structural design pattern
+proxy means substitute or placeholder
+It provides a Surrogate Object to control access to the original object.
+
+Real-Time Example
+Think about 🔥 YouTube Video Streaming:
+
+When you click on a video thumbnail, it shows the Preview Image (Proxy Object) first.
+Only if you click the play button, the Actual Video will start loading (Real Object).
+
+why proxy design pattern ?
+1.> To Control Access to the real object
+2.> To improve performance by delaying heavy object creation.
+3.> To provide security
+4.> caching mechanism.
+
+Types of Proxy Design Pattern
+Type                   	Purpose	                           Real-Time Example
+Virtual Proxy	        Lazy Initialization	               Hibernate Lazy Loading
+Protection Proxy	    Access Control	                   Spring Security
+Cache Proxy         	Caching Heavy Objects              Redis Cache
+Remote Proxy         	Communication with Remote Object   Microservices Feign Client
+Smart Proxy	            Adding Extra Functionality	       AOP Logging
+
+
+Spring Framework Uses Proxy Design Pattern Internally
+Class Name               	Proxy Type	                         Purpose
+Hibernate	                Virtual Proxy	                     Lazy Initialization
+Spring Security	            Protection Proxy	                 Access Control
+Feign Client	            Remote Proxy	                     Microservices Call
+Spring AOP	                Smart Proxy	                         Logging & Transactions
+Redis Cache	                Cache Proxy	                         Caching
+
+ Proxy Design Pattern is one of the Most Common Design Patterns used in
+✅ Hibernate
+✅ Spring Security
+✅ Feign Client
+✅ Spring AOP

@@ -1,0 +1,27 @@
+/* Factory design pattern is one of the creation design pattern use to provide object creation without exposing
+    object creation logic to client.that provides a centralized way to create and return different subclass objects based on input.
+     definition : It is used when we have super class with multiple sub classes and based user input or condition
+     we need to return one of the subclass object.
+
+     why factory design pattern
+     1.> Loose coupling
+     2.> Easy maintenance
+     3.> centralized Object Creation
+     4.> helps in achieving solid principles
+     5.> Improves code reusability
+
+     when to use factory design pattern
+     1.> when creation logic of object is complex
+     2.> when the client doesn't know which class object to create
+     3.> When there are multiple subclasses of a super class
+
+     Real-Time Example 📌
+👉 Let's say we have a Payment System where we need to create different Payment Methods like:
+
+Credit Card Payment
+UPI Payment
+Net Banking Payment
+Instead of writing new CreditCardPayment(), new UpiPayment() every time —
+We will use Factory Design Pattern 🔥.
+
+     */

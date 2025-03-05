@@ -1,0 +1,24 @@
+/*
+    prototype design pattern is one of the creational design pattern
+    It is used when we want to create duplicate of an existing object instead of creating new object from scratch.
+    It is highly used in Spring Boot Bean Scopes, Hibernate Caching, and Game Development.
+    Definition:Prototype design pattern is used to create duplicate object with same values of existing object without calling constructor.
+
+    why do we need prototype design pattern ?
+    1.> Object creation is costly
+    2.> Cloning is Faster Than object creation
+    3.> Solves performance issue
+    4.> Support Shallow copy & deep copy
+
+    Types of cloning
+    Type                 Description                             Example
+    1.>Shallow copy      Only reference is cloned                Default Clone()
+    2.>Deep Copy         Object + all fields Cloned              Custom Clone()
+
+    Where Prototype Design Pattern is Used in Real-Time Projects?
+Use Case                            	Example
+Spring Framework	                      Bean Scopes (Prototype Scope)
+Hibernate	                              Cache Mechanism
+Database Connection	                      Connection Pool
+Game Development	                      Creating Multiple Characters
+   */
